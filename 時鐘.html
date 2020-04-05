@@ -379,6 +379,144 @@
             }
 
         }
+
+        #meteor {
+            width: 5px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            transform: rotate(45deg);
+            animation: meteor 5s infinite;
+        }
+
+        @keyframes meteor {
+            0% {
+
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(0, 0, 0);
+            }
+
+            50% {
+
+                opacity: 1;
+                transform: scale(0) rotate(45deg) translate3d(-50px, 200px, 0);
+            }
+
+            100% {
+
+                opacity: 0;
+                transform: scale(1) rotate(45deg) translate3d(-100px, 500px, 0);
+            }
+        }
+
+        #meteor1 {
+            width: 5px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: rotate(45deg);
+            animation: meteor1 10s infinite;
+        }
+
+        @keyframes meteor1 {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(0, 0, 0);
+            }
+
+            25% {
+
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(-50px, 200px, 0);
+            }
+
+            50% {
+
+                opacity: 1;
+                transform: scale(0) rotate(45deg) translate3d(-100px, 500px, 0);
+            }
+
+            100% {
+
+                opacity: 0;
+                transform: scale(1) rotate(45deg) translate3d(-150px, 800px, 0);
+            }
+        }
+
+        #meteor2 {
+            width: 5px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 1%;
+            right: 5%;
+            transform: rotate(45deg);
+            animation: meteor2 5s infinite;
+        }
+
+        @keyframes meteor2 {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(0, 0, 0);
+            }
+
+            25% {
+
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(-50px, 200px, 0);
+            }
+
+            50% {
+
+                opacity: 1;
+                transform: scale(0) rotate(45deg) translate3d(-100px, 500px, 0);
+            }
+
+            100% {
+
+                opacity: 0;
+                transform: scale(1) rotate(45deg) translate3d(-150px, 800px, 0);
+            }
+        }
+
+        #meteor3 {
+            width: 5px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            right: 1%;
+            transform: rotate(45deg);
+            animation: meteor3 10s infinite;
+        }
+
+        @keyframes meteor3 {
+            0% {
+
+                opacity: 0;
+                transform: scale(0) rotate(45deg) translate3d(0, 0, 0);
+            }
+
+            50% {
+
+                opacity: 1;
+                transform: scale(0) rotate(45deg) translate3d(-50px, 200px, 0);
+            }
+
+            100% {
+
+                opacity: 0;
+                transform: scale(1) rotate(45deg) translate3d(-100px, 500px, 0);
+            }
+        }
     </style>
 </head>
 
@@ -411,6 +549,10 @@
         </tr>
     </table>
 
+    <div id="meteor"></div>
+    <div id="meteor1"></div>
+    <div id="meteor2"></div>
+    <div id="meteor3"></div>
     <script>
         const hour = document.getElementById("hour");
         const minute = document.getElementById("minute")
